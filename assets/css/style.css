@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,
+html{
+    width : 100%;
+    overflow-x : hidden;
+}
+body{
+    font-family: 'Roboto Condensed','Roboto', sans-serif;
+}
+video{
+    position: fixed;
+    top :0;
+    left :0;
+    z-index: -1;
+    min-width : 100%;
+    min-height : 100%;
+}
+.content{
+    width : 50%;
+    margin : 2rem auto;
+}
+.header{
+    text-align : center;
+    color : white;
+    margin-bottom : 0.7rem;
+}
+.btn-add-search-box{
+    text-align : center;
+    margin-bottom: 0.5rem;
+}
+.btn{
+    padding : 0.5rem 0.7rem;
+    border : none;
+    border-radius : 0.2rem;
+    color : white;
+    font-size: 1rem;
+    cursor : pointer;
+    outline : none;
+}
+.btn-add{
+    background-color: rgb(43, 95, 207);
+}
+.btn-search{
+    background-color : rgb(44, 133, 59);
+}
+.form-box{
+    width : 80%;
+    margin : auto;
+}
+.input-add-todo,
+.input-search-todo{
+    margin-top:  0.5rem;
+    width : 100%;
+    padding : 0.6rem 0.7rem;
+    border : none;
+    outline : none;
+    border-radius : 0.2rem;
+    box-shadow:  1px 1px 2px rgb(2, 131, 252) , -1px -1px 2px rgb(2, 131, 240) ;
+    
+}
+.todo-table{
+    width : 80%;
+    margin : 1rem auto;
+    background-color: rgba(255, 255, 255, 0.267);
+    box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.164),inset -1px -1px 3px rgba(255, 255, 255, 0.164) , 1px 1px 3px rgba(255, 255, 255, 0.164), -1px -1px 3px rgba(255, 255, 255, 0.164);
+    color : white;
+    border-radius : 0.2rem;
+    border-collapse: collapse;
+}
+
+.tr-table:last-child{
+    border-bottom : none;
+}
+.td-table{
+    padding : 0.5rem 0.7rem;
+}
+.done-todo{
+    text-decoration: line-through;
+}
+.td-table:first-child{
+    text-transform: capitalize;
+    font-weight : 400;
+}
+.td-table:first-child>span{
+    cursor : pointer;
+}
+.fa-close{
+    float : right;
+    color : white;
+    cursor : pointer;
+}
+
+@media (max-width : 1000px){
+    .content {
+        width : 60%;
+    }
+}
+@media (max-width : 800px){
+    .content {
+        width : 65%;
+    }
+}
+@media (max-width : 600px){
+    .content {
+        width : 70%;
+    }
+}
+@media (max-width : 600px){
+    .content {
+        width : 75%;
+    }
+}
+@media (max-width : 400px){
+    .content {
+        width : 80%;
+    }
+}
